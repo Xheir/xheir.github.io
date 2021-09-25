@@ -267,7 +267,8 @@ Red light, green light
                 
                     ---| FUNCIONES |--- 
                 
-                    Para hacer una funcion hay que crear un archivo .m
+                    Para hacer una funcion hay que crear un archivo nombre_funcion.m
+                    el archivo .m debe tener el mismo nombre que se utilizará despues en function.
                     Hay que poner end, ojalá siendo ordenado y que este al mismo nivel que el function
                     Para comentar podemos usar %
                 
@@ -307,15 +308,42 @@ Red light, green light
                         %Desarrollo
                     else
                         %Desarrollo
+                    end
                 
-                    donde else, en caso de no cumplir la condicion del if, dictará lo que se hará                
-                
-                
-                
+                    donde else, en caso de no cumplir la condicion del if, dictará lo que se hará.
                 
                 
+                ----------------------------------
                 
+                    ---| GRAFICAR |---
                 
+                    Para graficar debemos de tener nuestros dos vectores que representaran los ejes x e y
+                    para esto los vectores x e y deben tener la misma cantidad de elementos
+                
+                    plot(x,y)						plot es la funcion utilizada para graficar, este creará una ventana emergente la cual nos mostrará el grafico
+                    
+                    plot(ejex,ejey,'simbolo')		tambien podemos cambiar el simbolo que une los puntos del grafico
+                
+                    plot(ejex,ejey,'colores')		para los colores se utiliza la siguiente tabla
+                
+                    b		azul
+                    g		verde
+                    r		rojo
+                    c		cyan
+                    m		magenta
+                    y		amarillo
+                    k		negro
+                    w		blanco
+                
+                    Igualmente se puede agregar funciones para agregar al grafico, como por ejemplo:
+                
+                    ylabel('nombre')				el cual indica el nombre del eje y
+                    xlabel('nombre')				el cual indica el nombre del eje x
+                    title('titulo')					nos permite poner titulo al grafico
+                    text('texto')					utilizado para agregar texto al grafico
+                    figure(2)						esto se utiliza para poder crear un segundo grafico
+                
+        
                         </pre>
     </body>
 </html>
