@@ -187,13 +187,67 @@ Red light, green light
                 
                     VECTORES	
                 
-                    En matlab se pueden meter vectores.
-                    ejemplo:
+                    En matlab se pueden crear vectores.
+                    Al momento de crearlos, nos mostrará como es ese vector, para evitar esto se utiliza ";" al final de la sentencia.
+                    Ejemplo:
+                            Vector Fila
+                    
+                    x=[1 2 3 4 5]; 	
+                    x=[1:5];
+                    x=1:5;
                 
-                    x=[1 2 3 4 5] 	Vector Fila
-                    x=[1;2;3;4;5]	Vector Columna
+                    
+                            Vector Columna
+                    
+                    y=[1;2;3;4;5];
                 
                 
+                    Para crear automaticamente un vector con de un "num1" a un "num2" que vaya intercalando con un valor "inter"
+                
+                    x=num1:inter:num2
+                
+                    Ejemplo:
+                
+                    x=1:0.5:5;
+                
+                    Este ejemplo nos creará el siguiente vector:
+                
+                    1.0000    1.5000    2.0000    2.5000    3.0000    3.5000    4.0000    4.5000    5.0000
+                
+                    Ahora para hacer matrices de "ceros" o de "unos" utilizaremos:
+                
+                    x=ones(num1,num2);		Con esto creamos una matriz de "num1" filas y "num2" columnas llena de "unos"
+                    x=ones(num);			Con esto creamos una matriz cuadrada de "num" llena "unos"
+                    x=zeros(num1,num2);		Con esto creamos una matriz de "num1" filas y "num2" columnas llena de "ceros"
+                    x=zeros(num);			Con esto creamos una matriz cuadrada de "num" llena "unos"
+                
+                
+                    Para crear una matriz identidad utilzamos la función eye(num)
+                
+                    x=eye(num);
+                
+                    Podemos usar distintas funciones a los vectores, por ejemplo:
+                
+                    y=x.^2					Esto eleva todos los componentes de x y los guarda en sus lugares respectivos en y
+                
+                    Para saber el largo de un vector utilizamos la función length:
+                
+                    length(vec)				Siendo "vec" el vector, retornando el largo, el cual puede guardarse en otras variables
+                
+                    Si se quiere transformar un vector fila a un vector columna o viceversa, podemos hacer lo siguiente:
+                
+                    "'"						Este es el carácter que se utiliza para cambiar de filas a columna un vector
+                
+                    Ejemplo:
+                
+                    y=x'					Ahora y tiene los mismo valres que "x", pero si "x" era vector fila, "y" será vector columna.
+                    x=x'					Y con esto transformamos "x" de fila a columna o viceversa.
+                
+                    En temas de igualdad y comparación, tambien se pueden aplicar a los vectores, los cuales comprarán componente por componente.
+                
+                    La funcion que se utiliza para comprobar si todos los valores dentro de un vector son distintos de cero es el sigueinte:
+                
+                    all(vec)				Responderá 0 o 1 dependiendo de si es Verdadero o Falso 
                 
                 
                         </pre>
