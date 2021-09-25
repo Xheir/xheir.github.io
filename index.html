@@ -179,6 +179,7 @@ Red light, green light
                     "exp(num)"		exponencial de num
                     "num1.^num2"	num1 elevado a num2
                     "eps"			Constante de precición, el numero más pequeño mayor que 0 
+                    "round(num)"	me aproxima num a un enetero
                 
                     "realmax"		nos da la variable mas grande que se puede almacenar
                     "realmin"		nos da la variable mas pequeña que se puede almacenar
@@ -300,11 +301,13 @@ Red light, green light
                         %Desarrollo
                     end
                 
-                    ---| IF ELSE |---
+                    ---| IF, ELSE IF, ELSE|---
                 
                     El if es una sentencia que se utiliza para hacer una acción basado en si lo que se pide en el if se cumple o no.
                 
                     if "condición"
+                        %Desarrollo
+                    else if
                         %Desarrollo
                     else
                         %Desarrollo
@@ -341,9 +344,14 @@ Red light, green light
                     xlabel('nombre')				el cual indica el nombre del eje x
                     title('titulo')					nos permite poner titulo al grafico
                     text('texto')					utilizado para agregar texto al grafico
+                    legend('leyenda')				utilizado para agregar leyenda al grafico
                     figure(2)						esto se utiliza para poder crear un segundo grafico
                 
-        
+                    Tambien es posible graficar 2 o más funciones en un solo grafico:
+                
+                    plot(x,f(x),'color1',y,f(y),'color2')		Y así mismo diferenciarlos por leyenda a ambos
+                    legend('leyenda_funcion1','leyenda_funcion2')
+                    
                         </pre>
     </body>
 </html>
