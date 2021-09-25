@@ -152,6 +152,10 @@ Red light, green light
                 
                 ----------------------------------
                 
+                    IMPORTANTE
+                    Puedes escribir help ______, donde colocaremos el comando del cual queramos saber más y nos mostrará ayuda
+                
+                
                 
                     "==" igualdad
                     "~=" desigualdad
@@ -179,13 +183,15 @@ Red light, green light
                     "realmax"		nos da la variable mas grande que se puede almacenar
                     "realmin"		nos da la variable mas pequeña que se puede almacenar
                 
+                    Cuando hacemos cosas que no se pueden calcular nos otorgará infinito o NaN.
+                    Ejemplo:
                     Al dividir por 0 nos dirá que el resultado será infinito
-                    Y al dividir 0/0 nos dira que es NaN es decir "No a Number"
+                    Y al dividir 0/0 nos dira que es NaN es decir "Not a Number"
                 
                 
                 ----------------------------------
                 
-                    VECTORES	
+                    ---| VECTORES |---	
                 
                     En matlab se pueden crear vectores.
                     Al momento de crearlos, nos mostrará como es ese vector, para evitar esto se utiliza ";" al final de la sentencia.
@@ -248,6 +254,66 @@ Red light, green light
                     La funcion que se utiliza para comprobar si todos los valores dentro de un vector son distintos de cero es el sigueinte:
                 
                     all(vec)				Responderá 0 o 1 dependiendo de si es Verdadero o Falso 
+                
+                    Para modificar vectores:
+                
+                    x(num1)=num2					Se cambia el valor del vector "x" en la posicion "num1" por el nuevo valor "num2"
+                    x(num1:num2)=num3				Acá se cambia desde la posicion "num1" a "num2", todos serán ahora "num3"
+                    x([num1 num2])= [num3 num4]		Cambiamos solo los valores en la posicion "num1" y "num2" por "num3" y "num4" respectivamente
+                
+                    x=linespace(num1,num2,num3)		Creará un vector desde el "num1" hasta el "num2", con "num3" cantidad de componentes
+                
+                ----------------------------------
+                
+                    ---| FUNCIONES |--- 
+                
+                    Para hacer una funcion hay que crear un archivo .m
+                    Hay que poner end, ojalá siendo ordenado y que este al mismo nivel que el function
+                    Para comentar podemos usar %
+                
+                    function F=nombre_funcion(x)
+                
+                    %Desarrollo
+                
+                    end
+                
+                    ---| FOR | --- 
+                
+                    El ciclo "for" es utilizada para crear un ciclo donde se repetiran setencias una cantidad de veces
+                    Este ciclo tendra una variable que irá incrementando según se quiera, desde una variable inicial a una variable final. 
+                
+                    "vi" 	variable inicial
+                    "vf" 	variable final
+                    "var"	variable que incrementará
+                    "incre"	incremento por ciclo
+                
+                    for var= vi:incr:vf				
+                        %Desarrollo
+                    end
+                
+                    ---| WHILE |---
+                
+                    Al igual que el for, while es un ciclo el cual en este caso esta dado por una condición, la cual mientras se cumpla, el ciclo seguira funcionando
+                
+                    while "condición"			
+                        %Desarrollo
+                    end
+                
+                    ---| IF ELSE |---
+                
+                    El if es una sentencia que se utiliza para hacer una acción basado en si lo que se pide en el if se cumple o no.
+                
+                    if "condición"
+                        %Desarrollo
+                    else
+                        %Desarrollo
+                
+                    donde else, en caso de no cumplir la condicion del if, dictará lo que se hará                
+                
+                
+                
+                
+                
                 
                 
                         </pre>
