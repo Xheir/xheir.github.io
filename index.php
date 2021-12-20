@@ -87,8 +87,6 @@
             echo "Nombre = ". $row[0] . "<br>";
             echo "Apellido = ". $row[1] ."<br>";
             echo "Titulo = ". $row[2] ."<br><br>";
-            //echo "nacionalidad =  ".$row[3] ."<br>";
-            //echo "kilometraje =  ".$row[4] . " kms."."<br><br>";
          }
       }else if(!$ret2){
          while($row = pg_fetch_row($ret2)) {
