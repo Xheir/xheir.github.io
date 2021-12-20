@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html lang="spa">
+</html>
 
     <?php
-    
-    >
 
    if ($_POST["submit"] != "Buscar") {
-
-      ?>
-      <html>
+      
          <head>
          <title> Pagina de Libros </title>
          </head>
          <body style = "background-color:powderblue;">
             <h1 style = "text-align:center;color:green"> Pagina de Libros </h1>
-            <h2> Consulte por su libro, autor o genero favorito </h2>
+            <h2> Consulte por su libro, autor o genero favorito salu2</h2>
             <br>
             <img src = "https://c.tenor.com/R5B3E0shIUgAAAAM/yoshi-dan%C3%A7ando-yoshi-e-ovo.gif" width = "300px" height = "300px" align = "right"/>
             <img src = "https://c.tenor.com/OBfGJE_1DDoAAAAC/twelve-street-fighter.gif" width = "300px" height = "300px" align = "right"/>
@@ -28,9 +25,7 @@
                <input type = "submit" name ="submit" value = "Buscar"/>
             </form>
          </body>
-      </html>
-      <?PHP
-
+    
    }else{
 
       $marca = $_POST["marca"];
@@ -153,4 +148,5 @@
 
       pg_close($db);
    }
-?> 
+    ?>
+</html>
