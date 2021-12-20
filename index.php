@@ -151,3 +151,4 @@
       pg_close($db);
    }
 ?> 
+</html>
